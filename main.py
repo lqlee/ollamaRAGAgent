@@ -7,7 +7,7 @@ from vector import retriever
 model = OllamaLLM(model = 'gemma3:1b')
 
 template = '''
-You are an expert in answering questions about a pizza restraurant
+You are an expert in answering questions about compliance
 
 Here are some relevant reviews : {reviews}
 

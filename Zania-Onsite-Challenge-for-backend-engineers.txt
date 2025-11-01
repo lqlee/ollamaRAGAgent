@@ -1,0 +1,82 @@
+﻿Zania | Coding Challenge
+
+
+Problem Statement
+Create a backend API that is a Question-Answering bot that leverages the capabilities of a large language model. This bot should be able to answer questions based on the content of a document. You will be using the Langchain framework to implement this functionality.
+
+
+
+
+To complete this challenge, follow these steps using the LangChain or Llama Index or Similar framework: 1. https://python.langchain.com/docs/use_cases/question_answering/ and build an API using Fast API or Flask or Django
+
+
+Supported Input File Types
+Your API should support two types for input over which questions can be answered:
+* JSON
+* PDF
+Input Requirements
+You need to provide two input files:
+* A file containing a list of questions. (JSON)
+* A file containing the document over which the questions will be answered. (PDF or JSON)
+Output Format
+The output should be a structured JSON blob that pairs each question with its corresponding answer.
+
+
+[“question”: ”answer”, “question”: ”answer”, “question”: ”answer”]
+Technology Suggestions
+You are suggested to use the following technologies:
+* Python 3.x
+* FastAPI
+* LangChain or Llama Index or Similar (Python)
+* OpenAI (gpt-4o-mini)
+* VectorDB
+Quality
+* Create high quality code as you would for a production service. Be mindful of writing a good readme, a few tests, managing dependencies, and so on.
+Submission Guidelines
+To submit your solution, please email the following to shruti@zania.ai:
+* A link to your GitHub repository where you've hosted your code.
+* A video or demo of your application in action. (optional)
+
+
+
+
+OpenAI Key
+sk-proj-K_{fake one}
+
+
+
+
+Note:
+* Do not commit the keys to Git or Github.
+* The Api keys have a limit of $5 so use it judiciously.
+* Please use the gpt-4o-mini model. Don’t use GPT-4 or 16K token models.
+Question(s)
+If you have any questions feel free to reach out to us at shruti@zania.ai. 
+
+
+
+
+Appendix - Sample questions and files
+
+
+Questions
+1. Do you have formally defined criteria for notifying a client during an incident that might impact the security of their data or systems? What are your SLAs for notification?
+2. Is personal information transmitted, processed, stored, or disclosed to or retained by third parties? If yes, describe.
+3. Which cloud providers do you rely on?
+4. Please specify the primary data center location/region of the underlying cloud infrastructure used to host the service(s) as well as the backup location(s).
+5. Which of the following, if any, are performed as part of your monitoring process for the service:
+   1. Application Performance Monitoring (APM)
+   2. End User Monitoring (EUM)
+   3. Digital Experience Monitoring (DEM)
+
+
+
+
+
+
+Sample JSON file
+https://docs.google.com/spreadsheets/d/1u7z18yNKsL8cMLV6OxYI1-8ageRfFG1j/edit
+
+
+Sample PDF file
+https://productfruits.com/docs/soc2-type2.pdf

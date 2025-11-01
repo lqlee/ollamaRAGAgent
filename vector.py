@@ -5,7 +5,7 @@ from langchain_core.documents import Document
 import os
 import pandas as pd
 
-df = pd.read_csv('review.csv')
+df = pd.read_csv('Zania-QnA.csv')
 embeddings = OllamaEmbeddings(model='mxbai-embed-large')
 
 db_location = './chrome_langchain_db'
@@ -17,8 +17,8 @@ if add_documents :
 
   for i, row in df.iterrows() :
     document = Document(
-      page_content = row['Title'] + ' ' + row['Review'],
-      metadata = {'rating': row['Rating'], 'date': row['Date']},
+      page_content = row['question'] + ' ' + row['answer'] + ' ' + row['comments'],
+      metadata = {'id': row['id'], 'confidence': row['confidence']},
       id = str(i)
     )
     ids.append(str(i))
